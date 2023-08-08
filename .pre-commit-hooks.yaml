@@ -9,3 +9,10 @@
   entry: aquasec/trivy:0.44.0 config --exit-code 1
   language: docker_image
   pass_filenames: false
+
+- id: trivy
+  name: trivy
+  description: Runs trivy locally or fetches the latest docker image
+  language: script
+  entry: trivy.sh
+  pass_filenames: false
